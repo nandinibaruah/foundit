@@ -43,16 +43,17 @@
     }
   
     .image-container {
-      width: 150px;
-      height: 150px; 
+      width: 100px;
+      height: 100px; 
       overflow: hidden;
       position: relative;
       border-radius: 20px;
+      margin-right: 400px;
     }
 
     .image-container img {
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
       max-width: 100%;
       max-height: 100%;
       object-fit: cover; 

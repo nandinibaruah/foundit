@@ -59,7 +59,7 @@
       description="lost orange cat"
     />
     <ListItem
-      status = "lost"
+      status={item.status}
       title={item.title}
       imageUrl={item.imageUrl}
       description={item.description}
