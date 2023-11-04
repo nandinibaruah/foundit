@@ -19,10 +19,9 @@
   
   <style>
     .item-container {
-      background-color: #f0f0f0;
+      background-color: #fafafa;
       padding: 10px;
       border-radius: 20px; 
-      margin: 10px 0;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       width: 100%; 
     }
@@ -31,14 +30,6 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-    }
-  
-    .item-header h2 {
-      margin-left: 10px;
-      flex-grow: 1;
-      font-size: 1.8em;
-      font-weight: bold;
-      font-family: Arial;
     }
   
     .two-column-container {
@@ -52,29 +43,22 @@
     }
   
     .image-container {
-      width: 100%;
-      height: 200px; 
+      width: 150px;
+      height: 150px; 
       overflow: hidden;
-      margin-bottom: 50px;
       position: relative;
       border-radius: 20px;
     }
 
     .image-container img {
-      width: 400px;
-      height: 400px;
+      width: 40px;
+      height: 40px;
       max-width: 100%;
       max-height: 100%;
       object-fit: cover; 
       border-radius: 20px; 
     }
   
-    .description {
-      max-height: 50px;
-      overflow: hidden;
-      cursor: pointer;
-      font-size: 1.4em;
-    }
   
     .status-chip {
       display: inline-block;
@@ -83,6 +67,7 @@
       border-radius: 5px;
       font-weight: bold;
       margin-right: 10px;
+      height: fit-content;
     }
   
     .lost {
@@ -94,22 +79,24 @@
     }
   </style>
   
-  <div class="item-container">
-    <div class="item-header">
-      <div class="status-chip {status}">
-        {status.toUpperCase()}
+  <div class="bg-slate-50 rounded-lg text-blue-900 flex justify-between w-full p-5">
+    <div class="flex-col justify-start w-full">
+      <div class="flex align-center justify-start w-64 md:w-full">
+        <div class="status-chip {status}">
+          {status.toUpperCase()}
+        </div>
+        <h2 class="font-semibold text-2xl truncate">{title}</h2>
       </div>
-      <h2>{title}</h2>
+      {#if description}
+        <p class="description text-md">{description}</p>
+      {/if}
     </div>
-    <div class="two-column-container">
+    <div class="">
       <div class="column">
-        {#if description}
-          <p class="description">{description}</p>
-        {/if}
       </div>
       {#if imageUrl}
         <div class="column">
-          <div class="image-container">
+          <div class="image-container bg-slate-300">
             <img src={imageUrl} alt={title} />
           </div>
         </div>
