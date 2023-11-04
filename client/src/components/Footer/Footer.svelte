@@ -1,9 +1,15 @@
 <script>
-  import Button from "./Button.svelte";
-
+  import Icon from "$components/Icon.svelte";
+import Button from "./Button.svelte";
 </script>
 <div class="p-5 flex justify-between">
-  <Button>H</Button>
-  <Button>+</Button>
-  <Button>P</Button>
+  <Button>
+    <Icon name="home"/>
+  </Button>
+  <Button>
+    <Icon name="plus"/>
+  </Button>
+  <Button>
+    <Icon name="user"/>
+  </Button>
 </div>
