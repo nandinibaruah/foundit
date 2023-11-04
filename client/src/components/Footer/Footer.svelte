@@ -3,13 +3,13 @@
 import Button from "./Button.svelte";
 </script>
 <div class="p-5 flex justify-between shadow-card">
-  <Button>
+  <Button href="/">
     <Icon name="home"/>
   </Button>
-  <Button>
+  <Button href="/add">
     <Icon name="plus"/>
   </Button>
-  <Button>
+  <Button href="/profile">
     <Icon name="user"/>
   </Button>
 </div>

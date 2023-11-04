@@ -1,9 +1,7 @@
-<h1 class=title>Welcome to FoundIt!</h1>
-
-<p>
-  <a href="/items" class=buttons>Items </a>
-  <a href="/item/123" class=buttons>Item Details</a>
-</p>
+<script>
+  import Items from "../components/Items/Items.svelte";
+</script>
+<Items/>
 
 <style>
   .title{

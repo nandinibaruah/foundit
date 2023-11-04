@@ -1,12 +1,25 @@
 <script>
   import ListItem from "$components/ListItem/ListItem.svelte";
   
+
   //ITEM DETAILS
   const items = [
     { 
       status: "lost", 
       title: 'Jacket', 
-      imageUrl: 'path_to_image.jpg', 
+      imageUrl: 'https://images.pexels.com/photos/16776919/pexels-photo-16776919/free-photo-of-blue-motor-scooter-standing-outside-a-beauty-center.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 
+      description: 'A warm jacket for winter.' 
+    },
+    { 
+      status: "found", 
+      title: 'A really cute orange cat', 
+      imageUrl: 'https://images.pexels.com/photos/18844140/pexels-photo-18844140/free-photo-of-building-of-natwest-bank-in-llandudno.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 
+      description: 'A warm jacket for winter.' 
+    },
+    { 
+      status: "lost", 
+      title: 'Jacket', 
+      imageUrl: 'https://images.pexels.com/photos/18325774/pexels-photo-18325774/free-photo-of-cheese-daisy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 
       description: 'A warm jacket for winter.' 
     },
   ];
@@ -48,24 +61,6 @@
   <div class="p-3 flex-col space-y-4 flex-1">
     <ListItem
       status={item.status}
-      title={item.title}
-      imageUrl={item.imageUrl}
-      description={item.description}
-    />
-    <ListItem 
-      status="lost" 
-      title="A really cute orange cat" 
-      imageUrl="blaldfs"
-      description="lost orange cat"
-    />
-    <ListItem
-      status = "lost"
-      title={item.title}
-      imageUrl={item.imageUrl}
-      description={item.description}
-    />
-    <ListItem
-      status = "lost"
       title={item.title}
       imageUrl={item.imageUrl}
       description={item.description}
