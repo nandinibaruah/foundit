@@ -1,6 +1,6 @@
 <script>
     /**
-     * @type {'lost' | 'found'}
+     * @type {"lost" | "found"}
      */
     export let status;
     /**
@@ -36,6 +36,9 @@
     .item-header h2 {
       margin-left: 10px;
       flex-grow: 1;
+      font-size: 1.8em;
+      font-weight: bold;
+      font-family: Arial;
     }
   
     .two-column-container {
@@ -52,14 +55,16 @@
       width: 100%;
       height: 200px; 
       overflow: hidden;
-      margin-bottom: 10px;
+      margin-bottom: 50px;
       position: relative;
       border-radius: 20px;
     }
-  
+
     .image-container img {
-      width: 100%;
-      height: 100%;
+      width: 400px;
+      height: 400px;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: cover; 
       border-radius: 20px; 
     }
@@ -68,6 +73,7 @@
       max-height: 50px;
       overflow: hidden;
       cursor: pointer;
+      font-size: 1.4em;
     }
   
     .status-chip {
@@ -80,11 +86,11 @@
     }
   
     .lost {
-      background-color: #ffa500;
+      background-color: #FF8811;
     }
   
     .found {
-      background-color: #800080;
+      background-color: #7556D1;
     }
   </style>
   
