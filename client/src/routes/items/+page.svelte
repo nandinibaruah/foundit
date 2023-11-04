@@ -45,7 +45,7 @@
 <p class="date">{formattedDate}</p>
 
 {#each items as item}
-  <div class="p-3 h-full flex-col space-y-4">
+  <div class="p-3 flex-col space-y-4 flex-1">
     <ListItem
       status={item.status}
       title={item.title}
@@ -57,6 +57,12 @@
       title="A really cute orange cat" 
       imageUrl="blaldfs"
       description="lost orange cat"
+    />
+    <ListItem
+      status = "lost"
+      title={item.title}
+      imageUrl={item.imageUrl}
+      description={item.description}
     />
     <ListItem
       status = "lost"
