@@ -1,4 +1,10 @@
 <script>
+  import {goto} from '$app/navigation';
+
+    const goToPage = (itemId)=> {
+      goto(`/item/${itemId}`)
+      console.log("HIIIII")
+    }
     /**
      * @type {"lost" | "found"}
      */
@@ -51,15 +57,6 @@
       margin-right: 400px;
     }
 
-    .image-container img {
-      width: 20px;
-      height: 20px;
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: cover; 
-      border-radius: 20px; 
-    }
-  
   
     .status-chip {
       display: inline-block;
@@ -80,7 +77,10 @@
     }
   </style>
   
-  <div class="bg-slate-50 rounded-lg text-blue-900 flex justify-between w-full p-5">
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <!-- svelte-ignore missing-declaration -->
+  <!-- svelte-ignore a11y-no-static-element-interactions -->
+  <div class="bg-slate-50 rounded-lg text-blue-900 flex justify-between w-full p-5 hover:cursor-pointer" on:click={() => goToPage(title)}>
     <div class="flex-col justify-start w-full">
       <div class="flex align-center justify-start w-64 md:w-full">
         <div class="status-chip {status}">
@@ -98,7 +98,7 @@
       {#if imageUrl}
         <div class="column">
           <div class="image-container bg-slate-300">
-            <img src={imageUrl} alt={title} />
+            <img src={imageUrl} alt={title} class="object-cover" />
           </div>
         </div>
       {/if}
