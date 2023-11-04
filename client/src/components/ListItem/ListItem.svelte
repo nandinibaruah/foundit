@@ -49,11 +49,12 @@
     }
   
     .image-container {
-      width: 150px;
-      height: 150px; 
+      width: 100px;
+      height: 100px; 
       overflow: hidden;
       position: relative;
       border-radius: 20px;
+      margin-right: 400px;
     }
 
   
