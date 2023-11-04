@@ -20,16 +20,6 @@
 </script>
 
 <style>
-  .item-container {
-      padding: 10px;
-      border-radius: 8px;
-      margin: 10px 0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column; /* Make the card a column layout */
-      color: #392E5A; /* Dark blue text color */
-      font-family:'Arial', sans-serif;
-  }
 
   .title{
     font-size: 3em;
@@ -54,8 +44,8 @@
 <h1 class="title">Lost Items</h1>
 <p class="date">{formattedDate}</p>
 
-{#each items as item, index}
-  <div class="item-container">
+{#each items as item}
+  <div class="p-3 h-full flex-col space-y-4">
     <ListItem
       status={item.status}
       title={item.title}
@@ -64,7 +54,7 @@
     />
     <ListItem 
       status="lost" 
-      title="cat" 
+      title="A really cute orange cat" 
       imageUrl="blaldfs"
       description="lost orange cat"
     />
