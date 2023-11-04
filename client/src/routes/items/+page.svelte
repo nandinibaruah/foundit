@@ -63,13 +63,13 @@
       description={item.description}
     />
     <ListItem 
-      status="lost" 
-      title="cat" 
-      imageUrl="blaldfs"
-      description="lost orange cat"
+      status={item.status}
+      title={item.title}
+      imageUrl={item.imageUrl}
+      description={item.description}
     />
     <ListItem
-      status = "lost"
+      status={item.status}
       title={item.title}
       imageUrl={item.imageUrl}
       description={item.description}

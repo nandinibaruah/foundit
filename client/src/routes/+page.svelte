@@ -1,8 +1,8 @@
-<h1 class=title>Welcome to FoundIt!</h1>
+<h1 class=title>FoundIt</h1>
 
 <p>
   <a href="/items" class=buttons>Items </a>
-  <a href="/item/123" class=buttons>Item Details</a>
+  <a href="/item/123" class="buttons">Item Details</a>
 </p>
 
 <style>
