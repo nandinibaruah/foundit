@@ -1,5 +1,5 @@
 <script>
-  import Item from "../../components/Item.svelte";
+  import Item from "$components/Item.svelte";
   const items = ["item 1", "item 2", "item 3"];
 </script>
 
