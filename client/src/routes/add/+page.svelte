@@ -1,1 +1,6 @@
-<h1>add item</h1>
+<script>
+  import AddItem from "../../components/AddItem/AddItem.svelte";
+
+</script>
+
+<AddItem/>
