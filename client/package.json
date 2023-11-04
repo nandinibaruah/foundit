@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"feather-icons": "^4.29.1"
+		"feather-icons": "^4.29.1",
+		"svelte-routing": "^2.6.0"
 	}
 }
