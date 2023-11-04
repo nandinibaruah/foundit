@@ -54,7 +54,6 @@
       overflow: hidden;
       position: relative;
       border-radius: 20px;
-      margin-right: 400px;
     }
 
   
