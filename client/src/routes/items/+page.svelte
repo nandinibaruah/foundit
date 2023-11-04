@@ -25,10 +25,10 @@
 {#each items as item, index}
   <div class="item-container">
     <ListItem
-      status="found"
-      title="Item Title"
-      imageUrl="https://th.bing.com/th/id/OIP.g1m0K7yumfwkc_ub224a4AHaE7?pid=ImgDet&rs=1"
-      description="Item Description"
+      status={item.status}
+      title={item.title}
+      imageUrl={item.imageUrl}
+      description={item.description}
     />
   </div>
 {/each}
