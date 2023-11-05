@@ -1,10 +1,7 @@
-<script>
-    import { page } from '$app/stores';
+<script> 
     import Card from '../Card.svelte';
-    import FeatureLayout from '../FeatureLayout.svelte';
-    let itemId = $page.params.slug;
-    export let title;
-    export let status;
+    import FeatureLayout from '../FeatureLayout.svelte'; 
+    export let title; 
     export let imageUrl;
     export let description;
 
