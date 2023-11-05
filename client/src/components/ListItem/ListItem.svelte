@@ -2,8 +2,7 @@
   import {goto} from '$app/navigation';
 
     const goToPage = (itemId)=> {
-      goto(`/item/${itemId}`)
-      console.log("HIIIII")
+      goto(`/items/${itemId}`)
     }
     /**
      * @type {"lost" | "found"}
