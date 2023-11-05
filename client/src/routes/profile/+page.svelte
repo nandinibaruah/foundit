@@ -1,1 +1,5 @@
-<h1>My profile page</h1>
+<script>
+    import Profile from "$components/Profile/Profile.svelte";
+  </script>
+  
+  <Profile/>
