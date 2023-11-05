@@ -36,13 +36,13 @@ app.get("/cat", (req, res) => {
 
 // SELECT: JWT Token Optional
 app.get("/items", items); // return Item[]
-app.get("/user/items", usersItems); // return Item[] with userId/jwt param
-app.get("/list/items", listItems); // return Item with itemId param
+//app.get("/users/:id/items/:jwt", usersItems); // return Item[] with userId/jwt param
+//app.get("/list/items/:id", listItems); // return Item with itemId param
 
 // requires auth: INSERT, UPDATE, DELETE with JWT Token & ItemId
 app.post("/items", insertItems);
-app.post("/items", updateItems);
-app.delete("/items", deleteItems);
+//app.post("/items/:id/:jwt", updateItems);
+//app.delete("/items/:id/:jwt", deleteItems);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

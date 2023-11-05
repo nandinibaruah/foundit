@@ -1,9 +1,23 @@
 <script>
   import ListItem from "$components/ListItem/ListItem.svelte";
-  
+  import { onMount } from 'svelte';
 
   //ITEM DETAILS
-  const items = [
+  let items = []
+
+  onMount(async () => {
+  fetch("http://localhost:3000/items")
+    .then(response => response.json())
+    .then(data => {
+      //console.log(data);
+      items = data
+      //apiData.set(data);
+    }).catch(error => {
+      console.log(error);
+      return [];
+    });
+  })
+  /*const items = [
     { 
       status: "lost", 
       title: 'Jacket', 
@@ -22,7 +36,7 @@
       imageUrl: 'https://images.pexels.com/photos/18325774/pexels-photo-18325774/free-photo-of-cheese-daisy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 
       description: 'A warm jacket for winter.' 
     },
-  ];
+  ];*/
 
   //DATE FORMATTING
   const currentDate = new Date();
@@ -60,7 +74,7 @@
 {#each items as item}
   <div class="p-3 flex-col space-y-4 flex-1">
     <ListItem
-      status={item.status}
+      status={item.status ? "found" : "lost"}
       title={item.title}
       imageUrl={item.imageUrl}
       description={item.description}
