@@ -12,4 +12,7 @@ import Button from "./Button.svelte";
   <Button href="/profile">
     <Icon name="user"/>
   </Button>
+  <Button href="/auth">
+    <Icon name="auth"/>
+  </Button>
 </div>
