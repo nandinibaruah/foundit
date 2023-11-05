@@ -17,7 +17,7 @@
             description: 'Found an identity. Dm me for it back.' 
         },
     ];
-    
+
     let session;
 
     async function getSession(){
@@ -89,7 +89,7 @@
     }
   </style>
   
-  <h1 class="title">UserEmail</h1>
+  <h1 class="title">{session?.user.user_metadata.name}</h1>
   <p class="myItems">My Items</p>
   
   {#each items as item}
@@ -103,11 +103,4 @@
     </div>
   {/each}
   
-  <button class="signout-button">Sign Out</button>
-
-
-<h1>Name: {session?.user.user_metadata.name}</h1>
-<h1>Email: {session?.user.user_metadata.email}</h1>
-<h1>Phone: </h1>
-<p></p>
-<button on:click={() => signOut()}>Sign Out</button>
+  <button class="signout-button" on:click={() => signOut()}>Sign Out</button>
