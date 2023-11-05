@@ -2,8 +2,7 @@
   import {goto} from '$app/navigation';
 
     const goToPage = (itemId)=> {
-      goto(`/item/${itemId}`)
-      console.log("HIIIII")
+      goto(`/items/${itemId}`)
     }
     /**
      * @type {"lost" | "found"}
@@ -49,8 +48,8 @@
     }
   
     .image-container {
-      width: 100px;
-      height: 100px; 
+      width: 100%;
+      height: 75px; 
       overflow: hidden;
       position: relative;
       border-radius: 20px;
