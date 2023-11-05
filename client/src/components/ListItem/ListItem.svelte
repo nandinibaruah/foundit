@@ -48,8 +48,8 @@
     }
   
     .image-container {
-      width: 100%;
-      height: 75px; 
+      width: 5em;
+      height: 5em; 
       overflow: hidden;
       position: relative;
       border-radius: 20px;
