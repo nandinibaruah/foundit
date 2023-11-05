@@ -18,7 +18,7 @@
       iconName: "user"
     },
     {
-      path: "/auth",
+      path: "/signin",
       iconName: "log-in"
     }
   ]
