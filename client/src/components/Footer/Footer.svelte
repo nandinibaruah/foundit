@@ -16,6 +16,10 @@
     {
       path: "/profile",
       iconName: "user"
+    },
+    {
+      path: "/auth",
+      iconName: "auth"
     }
   ]
 
